@@ -1,0 +1,39 @@
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#red {
+    background: #aa1111;
+}
+
+#blue {
+    background: #20539e;
+}
+
+#green {
+    background: #0f9330;
+}
+
+#orange {
+    background: #bd8212;
+}
+
+#violet {
+    background: #9258d5;
+}
+
+#header {
+    font-family: "Sitka Small", serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.description {
+    font-family: "Sitka Text", serif;
+    font-size: 10px;
+    position: absolute;
+    margin-left: 30px;
+}
