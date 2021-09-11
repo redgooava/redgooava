@@ -1,34 +1,64 @@
+body {
+    background: #000000;
+}
+
 .circle {
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     position: absolute;
 }
 
-#red {
+.transferCircle {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.bigTransferCircle {
+    width: 14px;
+    height: 14px;
+}
+
+.smallTransferCircle {
+    width: 10px;
+    height: 10px;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.red {
     background: #aa1111;
 }
 
-#blue {
+.blue {
     background: #20539e;
 }
 
-#green {
+.green {
     background: #0f9330;
 }
 
-#orange {
+.orange {
     background: #bd8212;
 }
 
-#violet {
+.violet {
     background: #9258d5;
+}
+
+.white {
+    background: #b1b1b1;
+}
+
+.black {
+    background: #000000;
 }
 
 #header {
     font-family: "Sitka Small", serif;
     font-size: 30px;
     text-align: center;
+    color: darkslategray;
 }
 
 .description {

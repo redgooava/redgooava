@@ -3,48 +3,88 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Я ебашу в кашу</title>
+    <title>.minimalMap()</title>
     <link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css">
+    <div id="metameta"></div>
 </head>
 <body>
-    <p id="header">Народная карта этих ваших ебеней питерских</p>
-    <div class="circle" id='blue' style="left: {{ l0 }}%; top: {{ t0 }}%"></div>
-    <div class="circle" id='blue' style="left: {{ l1 }}%; top: {{ t1 }}%"></div>
-    <div class="circle" id='blue' style="left: {{ l2 }}%; top: {{ t2 }}%"></div>
-    <div class="circle" id='blue' style="left: {{ l3 }}%; top: {{ t3 }}%"></div>
-    <div class="circle" id='blue' style="left: {{ l4 }}%; top: {{ t4 }}%"></div>
-    <div class="circle" id='blue' style="left: {{ l5 }}%; top: {{ t5 }}%"></div>
-    <div class="circle" id='blue' style="left: {{ l6 }}%; top: {{ t6 }}%"></div>
-    <div class="circle" id='blue' style="left: {{ l7 }}%; top: {{ t7 }}%"></div>
-    <div class="circle" id='blue' style="left: {{ l8 }}%; top: {{ t8 }}%"></div>
-    <div class="circle" id='blue' style="left: {{ l9 }}%; top: {{ t9 }}%"></div>
-    <div class="circle" id='blue' style="left: {{ l10 }}%; top: {{ t10 }}%"></div>
-    <div class="circle" id='blue' style="left: {{ l11 }}%; top: {{ t11 }}%"></div>
-    <div class="circle" id='blue' style="left: {{ l12 }}%; top: {{ t12 }}%"></div>
-    <div class="circle" id='blue' style="left: {{ l13 }}%; top: {{ t13 }}%"></div>
-    <div class="circle" id='blue' style="left: {{ l14 }}%; top: {{ t14 }}%"></div>
-    <div class="circle" id='blue' style="left: {{ l15 }}%; top: {{ t15 }}%"></div>
-    <div class="circle" id='blue' style="left: {{ l16 }}%; top: {{ t16 }}%"></div>
-    <div class="circle" id='blue' style="left: {{ l17 }}%; top: {{ t17 }}%"></div>
+    <div class='circle blue' style="left: {{ l0 }}%; top: {{ t0 }}%"></div>
+    <div class='circle blue' style="left: {{ l1 }}%; top: {{ t1 }}%"></div>
+    <div class='circle blue' style="left: {{ l2 }}%; top: {{ t2 }}%"></div>
+    <div class='circle blue' style="left: {{ l3 }}%; top: {{ t3 }}%"></div>
+    <div class='circle blue' style="left: {{ l4 }}%; top: {{ t4 }}%"></div>
+    <div class='circle blue' style="left: {{ l5 }}%; top: {{ t5 }}%"></div>
+    <div class='circle blue' style="left: {{ l6 }}%; top: {{ t6 }}%"></div>
+    <div class='circle blue' style="left: {{ l7 }}%; top: {{ t7 }}%"></div>
+    <div class='transferCircle white bigTransferCircle' style="left: {{ l8 }}%; top: {{ t8 }}%"></div>
+    <div class='transferCircle black smallTransferCircle' style="left: {{ l8 }}%; top: {{ t8 }}%"></div>
+    <div class='transferCircle white bigTransferCircle' style="left: {{ l9 }}%; top: {{ t9 }}%"></div>
+    <div class='transferCircle black smallTransferCircle' style="left: {{ l9 }}%; top: {{ t9 }}%"></div>
+    <div class='transferCircle white bigTransferCircle' style="left: {{ l10 }}%; top: {{ t10 }}%"></div>
+    <div class='transferCircle black smallTransferCircle' style="left: {{ l10 }}%; top: {{ t10 }}%"></div>
+    <div class='circle blue' style="left: {{ l11 }}%; top: {{ t11 }}%"></div>
+    <div class='circle blue' style="left: {{ l12 }}%; top: {{ t12 }}%"></div>
+    <div class='circle blue' style="left: {{ l13 }}%; top: {{ t13 }}%"></div>
+    <div class='circle blue' style="left: {{ l14 }}%; top: {{ t14 }}%"></div>
+    <div class='circle blue' style="left: {{ l15 }}%; top: {{ t15 }}%"></div>
+    <div class='circle blue' style="left: {{ l16 }}%; top: {{ t16 }}%"></div>
+    <div class='circle blue' style="left: {{ l17 }}%; top: {{ t17 }}%"></div>
 
-    <div class="circle" id='red' style="left: {{ l18 }}%; top: {{ t18 }}%"></div>
-    <div class="circle" id='red' style="left: {{ l19 }}%; top: {{ t19 }}%"></div>
-    <div class="circle" id='red' style="left: {{ l20 }}%; top: {{ t20 }}%"></div>
-    <div class="circle" id='red' style="left: {{ l21 }}%; top: {{ t21 }}%"></div>
-    <div class="circle" id='red' style="left: {{ l22 }}%; top: {{ t22 }}%"></div>
-    <div class="circle" id='red' style="left: {{ l23 }}%; top: {{ t23 }}%"></div>
-    <div class="circle" id='red' style="left: {{ l24 }}%; top: {{ t24 }}%"></div>
-    <div class="circle" id='red' style="left: {{ l25 }}%; top: {{ t25 }}%"></div>
-    <div class="circle" id='red' style="left: {{ l26 }}%; top: {{ t26 }}%"></div>
-    <div class="circle" id='red' style="left: {{ l27 }}%; top: {{ t27 }}%"></div>
-    <div class="circle" id='red' style="left: {{ l28 }}%; top: {{ t28 }}%"></div>
-    <div class="circle" id='red' style="left: {{ l29 }}%; top: {{ t29 }}%"></div>
+    <div class='circle red' style="left: {{ l18 }}%; top: {{ t18 }}%"></div>
+    <div class='circle red' style="left: {{ l19 }}%; top: {{ t19 }}%"></div>
+    <div class='circle red' style="left: {{ l20 }}%; top: {{ t20 }}%"></div>
+    <div class='circle red' style="left: {{ l21 }}%; top: {{ t21 }}%"></div>
+    <div class='circle red' style="left: {{ l22 }}%; top: {{ t22 }}%"></div>
+    <div class='circle red' style="left: {{ l23 }}%; top: {{ t23 }}%"></div>
+    <div class='circle red' style="left: {{ l24 }}%; top: {{ t24 }}%"></div>
+    <div class='circle red' style="left: {{ l25 }}%; top: {{ t25 }}%"></div>
+    <div class='circle red' style="left: {{ l26 }}%; top: {{ t26 }}%"></div>
+    <div class='transferCircle white bigTransferCircle' style="left: {{ l27 }}%; top: {{ t27 }}%"></div>
+    <div class='transferCircle black smallTransferCircle' style="left: {{ l27 }}%; top: {{ t27 }}%"></div>
+    <div class='transferCircle white bigTransferCircle' style="left: {{ l28 }}%; top: {{ t28 }}%"></div>
+    <div class='transferCircle black smallTransferCircle' style="left: {{ l28 }}%; top: {{ t28 }}%"></div>
+    <div class='transferCircle white bigTransferCircle' style="left: {{ l29 }}%; top: {{ t29 }}%"></div>
+    <div class='transferCircle black smallTransferCircle' style="left: {{ l29 }}%; top: {{ t29 }}%"></div>
+    <div class='circle red' style="left: {{ l31 }}%; top: {{ t31 }}%"></div>
+    <div class='circle red' style="left: {{ l32 }}%; top: {{ t32 }}%"></div>
+    <div class='circle red' style="left: {{ l33 }}%; top: {{ t33 }}%"></div>
+    <div class='circle red' style="left: {{ l34 }}%; top: {{ t34 }}%"></div>
+    <div class='circle red' style="left: {{ l35 }}%; top: {{ t35 }}%"></div>
+    <div class='circle red' style="left: {{ l36 }}%; top: {{ t36 }}%"></div>
 
-    <h1 class="description" style="left: {{ l0 }}%; top: {{ t0 }}%">Вариант Кудрово с метро и маршруткой до Икеи</h1>
-    <h1 class="description" style="left: {{ l1 }}%; top: {{ t1 }}%">"Мухаббат 24 часа" чаще, чем разметка</h1>
-    <h1 class="description" style="left: {{ l2 }}%; top: {{ t2 }}%">Лежбище тюленей</h1>
-    <h1 class="description" style="left: {{ l3 }}%; top: {{ t3 }}%">Рынок с кучей хипстеров</h1>
-    <h1 class="description" style="left: {{ l4 }}%; top: {{ t4 }}%"></h1>
+    <div class='circle green' style="left: {{ l37 }}%; top: {{ t37 }}%"></div>
+    <div class='circle green' style="left: {{ l38 }}%; top: {{ t38 }}%"></div>
+    <div class='circle green' style="left: {{ l39 }}%; top: {{ t39 }}%"></div>
+    <div class='circle green' style="left: {{ l40 }}%; top: {{ t40 }}%"></div>
+    <div class='transferCircle white bigTransferCircle' style="left: {{ l43 }}%; top: {{ t43 }}%"></div>
+    <div class='transferCircle black smallTransferCircle' style="left: {{ l43 }}%; top: {{ t43 }}%"></div>
+    <div class='circle green' style="left: {{ l44 }}%; top: {{ t44 }}%"></div>
+    <div class='circle green' style="left: {{ l45 }}%; top: {{ t45 }}%"></div>
+    <div class='circle green' style="left: {{ l46 }}%; top: {{ t46 }}%"></div>
+    <div class='circle green' style="left: {{ l47 }}%; top: {{ t47 }}%"></div>
+    <div class='circle green' style="left: {{ l48 }}%; top: {{ t48 }}%"></div>
+
+    <div class='circle orange' style="left: {{ l51 }}%; top: {{ t51 }}%"></div>
+    <div class='circle orange' style="left: {{ l53 }}%; top: {{ t53 }}%"></div>
+    <div class='circle orange' style="left: {{ l54 }}%; top: {{ t54 }}%"></div>
+    <div class='circle orange' style="left: {{ l55 }}%; top: {{ t55 }}%"></div>
+    <div class='circle orange' style="left: {{ l56 }}%; top: {{ t56 }}%"></div>
+
+    <div class='circle violet' style="left: {{ l57 }}%; top: {{ t57 }}%"></div>
+    <div class='circle violet' style="left: {{ l58 }}%; top: {{ t58 }}%"></div>
+    <div class='circle violet' style="left: {{ l59 }}%; top: {{ t59 }}%"></div>
+    <div class='circle violet' style="left: {{ l60 }}%; top: {{ t60 }}%"></div>
+    <div class='circle violet' style="left: {{ l61 }}%; top: {{ t61 }}%"></div>
+    <div class='circle violet' style="left: {{ l62 }}%; top: {{ t62 }}%"></div>
+    <div class='circle violet' style="left: {{ l65 }}%; top: {{ t65 }}%"></div>
+    <div class='circle violet' style="left: {{ l66 }}%; top: {{ t66 }}%"></div>
+    <div class='circle violet' style="left: {{ l67 }}%; top: {{ t67 }}%"></div>
+    <div class='circle violet' style="left: {{ l68 }}%; top: {{ t68 }}%"></div>
+    <div class='circle violet' style="left: {{ l69 }}%; top: {{ t69 }}%"></div>
+    <div class='circle violet' style="left: {{ l70 }}%; top: {{ t70 }}%"></div>
+    <div class='circle violet' style="left: {{ l71 }}%; top: {{ t71 }}%"></div>
+
+
 
 
 </body>

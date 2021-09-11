@@ -6,6 +6,7 @@ mapData = MetroMap.mapData
 
 
 def index(request):
+
     return render(request, 'main/index.html', {"t0": mapData[0][2], "l0": mapData[0][3],
                                                "t1": mapData[1][2], "l1": mapData[1][3],
                                                "t2": mapData[2][2], "l2": mapData[2][3],
@@ -37,16 +38,51 @@ def index(request):
                                                "t27": mapData[27][2], "l27": mapData[27][3],
                                                "t28": mapData[28][2], "l28": mapData[28][3],
                                                "t29": mapData[29][2], "l29": mapData[29][3],
-                                               })
+                                               "t30": mapData[30][2], "l30": mapData[30][3],
+                                               "t31": mapData[31][2], "l31": mapData[31][3],
+                                               "t32": mapData[32][2], "l32": mapData[32][3],
+                                               "t33": mapData[33][2], "l33": mapData[33][3],
+                                               "t34": mapData[34][2], "l34": mapData[34][3],
+                                               "t35": mapData[35][2], "l35": mapData[35][3],
+                                               "t36": mapData[36][2], "l36": mapData[36][3],
+                                               "t37": mapData[37][2], "l37": mapData[37][3],
+                                               "t38": mapData[38][2], "l38": mapData[38][3],
+                                               "t39": mapData[39][2], "l39": mapData[39][3],
+                                               "t40": mapData[40][2], "l40": mapData[40][3],
+                                               "t41": mapData[41][2], "l41": mapData[41][3],
+                                               "t42": mapData[42][2], "l42": mapData[42][3],
+                                               "t43": mapData[43][2], "l43": mapData[43][3],
+                                               "t44": mapData[44][2], "l44": mapData[44][3],
+                                               "t45": mapData[45][2], "l45": mapData[45][3],
+                                               "t46": mapData[46][2], "l46": mapData[46][3],
+                                               "t47": mapData[47][2], "l47": mapData[47][3],
+                                               "t48": mapData[48][2], "l48": mapData[48][3],
+                                               "t49": mapData[49][2], "l49": mapData[49][3],
+                                               "t50": mapData[50][2], "l50": mapData[50][3],
+                                               "t51": mapData[51][2], "l51": mapData[51][3],
+                                               "t52": mapData[52][2], "l52": mapData[52][3],
+                                               "t53": mapData[53][2], "l53": mapData[53][3],
+                                               "t54": mapData[54][2], "l54": mapData[54][3],
+                                               "t55": mapData[55][2], "l55": mapData[55][3],
+                                               "t56": mapData[56][2], "l56": mapData[56][3],
+                                               "t57": mapData[57][2], "l57": mapData[57][3],
+                                               "t58": mapData[58][2], "l58": mapData[58][3],
+                                               "t59": mapData[59][2], "l59": mapData[59][3],
+                                               "t60": mapData[60][2], "l60": mapData[60][3],
+                                               "t61": mapData[61][2], "l61": mapData[61][3],
+                                               "t62": mapData[62][2], "l62": mapData[62][3],
+                                               "t63": mapData[63][2], "l63": mapData[63][3],
+                                               "t64": mapData[64][2], "l64": mapData[64][3],
+                                               "t65": mapData[65][2], "l65": mapData[65][3],
+                                               "t66": mapData[66][2], "l66": mapData[66][3],
+                                               "t67": mapData[67][2], "l67": mapData[67][3],
+                                               "t68": mapData[68][2], "l68": mapData[68][3],
+                                               "t69": mapData[69][2], "l69": mapData[69][3],
+                                               "t70": mapData[70][2], "l70": mapData[70][3],
+                                               "t71": mapData[71][2], "l71": mapData[71][3],
 
+                                               })
 
 def about(request):
     return render(request, 'main/about.html')
 
-
-print(mapData[0][2], mapData[0][3],
-      mapData[1][2], mapData[1][3],
-      mapData[2][2], mapData[2][3],
-      mapData[3][2], mapData[3][3])
-
-print(mapData[0][0], mapData[0][1], mapData[0][2], mapData[0][3])
